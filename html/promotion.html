@@ -31,7 +31,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);ove
   background: rgba(247,243,238,.92);
   backdrop-filter: blur(14px);
   border-bottom: 1px solid rgba(200,144,58,.15);
-  transition: box-shadow var(--trans);
+  transition: box-shadow var(--trans: 0.3s ease;);
 }
 .navbar.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,.12); }
 .nav-inner {
@@ -47,11 +47,11 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);ove
 .nav-links a {
   font-size: .92rem; font-weight: 500; color: #444;
   position: relative; padding-bottom: 2px;
-  transition: color var(--trans);
+  transition: color var(--trans: 0.3s ease;);
 }
 .nav-links a::after {
   content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 2px;
-  background: var(--green); transition: width var(--trans);
+  background: var(--trans: 0.3s ease;); transition: width var(--trans: 0.3s ease;);
 }
 .nav-links a:hover, .nav-links a.active { color: var(--green); }
 .nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
@@ -67,7 +67,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);ove
   border: none; padding: .55rem 1.3rem; border-radius: 25px;
   font-size: .88rem; font-weight: 600; cursor: pointer;
   display: flex; align-items: center; gap: .4rem;
-  transition: background var(--trans), transform var(--trans);
+  transition: background var(--trans: 0.3s ease;), transform var(--trans: 0.3s ease;);
 }
 .btn-connexion:hover { background: var(--green-l); transform: translateY(-1px); }
 .burger { display: none; background: none; border: none; font-size: 1.5rem; cursor: pointer; }
