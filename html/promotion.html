@@ -25,7 +25,7 @@
 
 body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;}
 
-/* ── la barre de navi── */
+/* ── NAVBAR ── */
 .navbar {
   position: sticky; top: 0; z-index: 100;
   background: rgba(247,243,238,.95); backdrop-filter: blur(14px);
@@ -48,7 +48,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);ove
 .btn-connexion { background: var(--green); color: #fff; border: none; padding: .5rem 1.2rem; border-radius: 22px; font-size: .85rem; font-weight: 600; cursor: pointer; transition: background .28s cubic-bezier(.4,0,.2,1); display: flex; align-items: center; gap: 6px; font-family: 'DM Sans', sans-serif; }
 .btn-connexion:hover { background: var(--green-light); }
 
-/* ── hero ── */
+/* ── HERO ── */
 .promo-hero{
   background: linear-gradient(135deg, var(--green-dark) 0%, #2a5224 50%, #1e3d1a 100%);
   padding: 90px 48px 80px;
@@ -74,14 +74,14 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);ove
 .btn-hero{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;background:var(--gold);color:var(--green-dark);border:none;border-radius:50px;font-family:'DM Sans',sans-serif;font-size:15px;font-weight:700;cursor:pointer;text-decoration:none;transition:background .2s,transform .15s;}
 .btn-hero:hover{background:var(--gold-light);transform:translateY(-2px);}
 
-/* ── SECTION WRAPPER ── */
+
 .section{padding:80px 48px;}
 .section-inner{max-width:1200px;margin:0 auto;}
 .section-tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--green);background:var(--green-pale);padding:4px 12px;border-radius:50px;margin-bottom:14px;}
 .section-title{font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,44px);font-weight:900;color:var(--text);margin-bottom:8px;}
 .section-sub{color:var(--muted);font-size:15px;margin-bottom:48px;}
 
-/* ── comment sa marche  ── */
+
 .hiw-section{background:var(--white);}
 .hiw-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-bottom:40px;}
 .hiw-step{padding:28px 24px;border:1px solid var(--border);border-radius:var(--radius);position:relative;transition:box-shadow .2s,transform .2s;}
@@ -95,7 +95,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);ove
 .hiw-note .note-icon{font-size:20px;flex-shrink:0;margin-top:2px;}
 .hiw-note p{font-size:13px;color:var(--text);line-height:1.6;}
 
-/* ── les resto ── */
+/* ── RESTAURANTS ── */
 .resto-section{background:var(--bg);}
 .resto-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
 .resto-card{background:var(--white);border-radius:var(--radius);overflow:hidden;border:1px solid var(--border);transition:box-shadow .2s,transform .2s;}
@@ -118,7 +118,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);ove
 .btn-voir-plus{font-size:12px;color:var(--green);font-weight:600;text-decoration:none;cursor:pointer;background:none;border:none;padding:0;}
 .btn-voir-plus:hover{text-decoration:underline;}
 
-/* ── circuit ── */
+/* ── CIRCUITS ── */
 .circuits-section{background:var(--white);}
 .circuits-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;}
 .circuit-card{border:1px solid var(--border);border-radius:var(--radius);padding:24px;display:flex;flex-direction:column;gap:12px;transition:box-shadow .2s,transform .2s;position:relative;overflow:hidden;}
@@ -143,7 +143,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);ove
 .btn-circuit{align-self:flex-start;padding:9px 20px;background:var(--green);color:white;border:none;border-radius:50px;font-size:13px;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;transition:background .2s;}
 .btn-circuit:hover{background:var(--green-light);}
 
-/* ── saisons ── */
+/* ── SAISONS ── */
 .saisons-section{background:var(--bg);}
 .saisons-tabs{display:flex;gap:8px;margin-bottom:36px;}
 .saison-tab{padding:9px 20px;border-radius:50px;border:1.5px solid var(--border);background:var(--white);font-size:13px;font-weight:500;cursor:pointer;display:flex;align-items:center;gap:6px;transition:all .2s;font-family:'DM Sans',sans-serif;}
@@ -171,7 +171,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);ove
 .cta-form button{padding:13px 24px;background:var(--gold);color:var(--green-dark);border:none;border-radius:50px;font-family:'DM Sans',sans-serif;font-size:14px;font-weight:700;cursor:pointer;white-space:nowrap;transition:background .2s;}
 .cta-form button:hover{background:var(--gold-light);}
 
-/* ── fouteur ── */
+/* ── FOOTER ── */
 footer{background:var(--green-dark);padding:60px 48px 30px;}
 .footer-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1.5fr 1fr 1fr 1.5fr;gap:48px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.1);}
 .footer-brand h3{font-family:'Playfair Display',serif;font-size:20px;color:white;margin-bottom:8px;}
@@ -189,7 +189,7 @@ footer{background:var(--green-dark);padding:60px 48px 30px;}
 .footer-bottom p{font-size:12px;color:rgba(255,255,255,.3);}
 .footer-logo-bg{font-family:'Playfair Display',serif;font-size:48px;font-weight:900;color:rgba(255,255,255,.06);letter-spacing:-2px;}
 
-
+/* ── RESPONSIVE ── */
 @media(max-width:900px){
   .hiw-steps,.resto-grid,.circuits-grid{grid-template-columns:1fr 1fr;}
   .saison-content.active{grid-template-columns:1fr;}
@@ -275,7 +275,7 @@ footer{background:var(--green-dark);padding:60px 48px 30px;}
   </div>
 </section>
 
-<!-- les resto mode html -->
+<!-- RESTAURANTS -->
 <section class="section resto-section">
   <div class="section-inner">
     <div style="text-align:center;margin-bottom:48px">
