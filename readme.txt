@@ -92,7 +92,7 @@ Compte de test :
   ├── README.txt
   │
   ├── data/
-  │   └── logements.json       (base de données des 63 logements)
+  │   └── logements.json       (base de données des 57 logements)
   │
   ├── logements/
   │   ├── index.html           (catalogue des logements)
@@ -105,8 +105,9 @@ Compte de test :
   ├── style/
   │   └── (fichiers CSS partagés)
   │
-  └── image/
-      └── connexion.png        (image de fond de la page connexion)
+  └── image/ 
+        |___( les images du site web et le reste des fichier )
+            
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
  FLUX DE RÉSERVATION
@@ -140,10 +141,10 @@ Compte de test :
 
   Niveau : L2 Informatique
 
-  1. HADDADJ   Manel
-  2. CHAOU     Slimane
-  3. AZGAGH    Sara
-  4. MEZRAG    Lina
+  1. HADDADJ   Manel G4
+  2. CHAOU     Slimane  G7
+  3. AZGAGH    Sara   G4
+  4. MEZRAG    Lina   G5
 
 ====================================================
  © 2026 DZbnb — Université Mouloud MAMMERI, Tizi-Ouzou
