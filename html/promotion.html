@@ -25,52 +25,28 @@
 
 body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;}
 
-/* ── bare de naviga ── */
+/* ── NAVBAR ── */
 .navbar {
-  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-  background: rgba(247,243,238,.92);
-  backdrop-filter: blur(14px);
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(247,243,238,.95); backdrop-filter: blur(14px);
   border-bottom: 1px solid rgba(200,144,58,.15);
-  transition: box-shadow var(--trans: 0.3s ease;);
+  box-shadow: 0 1px 12px rgba(0,0,0,.07);
 }
-.navbar.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,.12); }
 .nav-inner {
   max-width: 1320px; margin: 0 auto;
-  display: flex; align-items: center; gap: 2rem;
-  padding: .9rem 2rem;
+  display: flex; align-items: center; gap: 2rem; padding: .85rem 2rem;
 }
-.logo { display: flex; align-items: center; gap: .4rem; font-size: 1.5rem; font-weight: 700; }
-.logo-icon { font-size: 1.6rem; background: var(--green); border-radius: 50%; width: 38px; height: 38px; display: flex; align-items: center; justify-content: center; }
-.logo-dz { color: var(--text); font-family: 'DM Sans', sans-serif; font-weight: 700; }
-.logo-bnb { color: var(--gold); font-family: 'DM Sans', sans-serif; }
-.nav-links { display: flex; gap: 2.2rem; margin: 0 auto; }
-.nav-links a {
-  font-size: .92rem; font-weight: 500; color: #444;
-  position: relative; padding-bottom: 2px;
-  transition: color var(--trans: 0.3s ease;);
-}
-.nav-links a::after {
-  content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 2px;
-  background: var(--trans: 0.3s ease;); transition: width var(--trans: 0.3s ease;);
-}
+.logo { display: flex; align-items: center; gap: .4rem; font-size: 1.4rem; font-weight: 700; text-decoration: none; }
+.logo-icon { background: var(--green); border-radius: 50%; width: 34px; height: 34px; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; }
+.logo-dz { font-weight: 700; color: var(--text); }
+.logo-bnb { color: #c8903a; }
+.nav-links { display: flex; gap: 2rem; margin: 0 auto; list-style: none; }
+.nav-links a { font-size: .9rem; font-weight: 500; color: #555; transition: color .28s cubic-bezier(.4,0,.2,1); text-decoration: none; }
 .nav-links a:hover, .nav-links a.active { color: var(--green); }
-.nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
 .nav-right { display: flex; align-items: center; gap: 1rem; }
-.lang-btn {
-  font-size: .85rem; font-weight: 500; color: #555;
-  background: var(--cream-d); border: 1px solid #ddd;
-  padding: .4rem .8rem; border-radius: 20px; cursor: pointer;
-  display: flex; align-items: center; gap: .3rem;
-}
-.btn-connexion {
-  background: var(--green); color: var(--white);
-  border: none; padding: .55rem 1.3rem; border-radius: 25px;
-  font-size: .88rem; font-weight: 600; cursor: pointer;
-  display: flex; align-items: center; gap: .4rem;
-  transition: background var(--trans: 0.3s ease;), transform var(--trans: 0.3s ease;);
-}
-.btn-connexion:hover { background: var(--green-l); transform: translateY(-1px); }
-.burger { display: none; background: none; border: none; font-size: 1.5rem; cursor: pointer; }
+.lang-btn { font-size: .82rem; font-weight: 500; color: #555; background: #ede7de; border: 1px solid #ddd; padding: .35rem .75rem; border-radius: 18px; cursor: pointer; }
+.btn-connexion { background: var(--green); color: #fff; border: none; padding: .5rem 1.2rem; border-radius: 22px; font-size: .85rem; font-weight: 600; cursor: pointer; transition: background .28s cubic-bezier(.4,0,.2,1); display: flex; align-items: center; gap: 6px; font-family: 'DM Sans', sans-serif; }
+.btn-connexion:hover { background: var(--green-light); }
 
 /* ── hero ── */
 .promo-hero{
@@ -97,15 +73,13 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);ove
 .promo-hero p{color:rgba(255,255,255,.65);font-size:14px;max-width:520px;margin:0 auto 32px;line-height:1.7;}
 .btn-hero{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;background:var(--gold);color:var(--green-dark);border:none;border-radius:50px;font-family:'DM Sans',sans-serif;font-size:15px;font-weight:700;cursor:pointer;text-decoration:none;transition:background .2s,transform .15s;}
 .btn-hero:hover{background:var(--gold-light);transform:translateY(-2px);}
-
-/* ── SECTION WRAPPER ── */
 .section{padding:80px 48px;}
 .section-inner{max-width:1200px;margin:0 auto;}
 .section-tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--green);background:var(--green-pale);padding:4px 12px;border-radius:50px;margin-bottom:14px;}
 .section-title{font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,44px);font-weight:900;color:var(--text);margin-bottom:8px;}
 .section-sub{color:var(--muted);font-size:15px;margin-bottom:48px;}
 
-/* ── comment sa marche  ── */
+/* ── comment sa marche ── */
 .hiw-section{background:var(--white);}
 .hiw-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-bottom:40px;}
 .hiw-step{padding:28px 24px;border:1px solid var(--border);border-radius:var(--radius);position:relative;transition:box-shadow .2s,transform .2s;}
@@ -119,7 +93,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);ove
 .hiw-note .note-icon{font-size:20px;flex-shrink:0;margin-top:2px;}
 .hiw-note p{font-size:13px;color:var(--text);line-height:1.6;}
 
-/* ── restauu ── */
+/* ── le style des resto ── */
 .resto-section{background:var(--bg);}
 .resto-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
 .resto-card{background:var(--white);border-radius:var(--radius);overflow:hidden;border:1px solid var(--border);transition:box-shadow .2s,transform .2s;}
@@ -142,7 +116,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);ove
 .btn-voir-plus{font-size:12px;color:var(--green);font-weight:600;text-decoration:none;cursor:pointer;background:none;border:none;padding:0;}
 .btn-voir-plus:hover{text-decoration:underline;}
 
-
+/* ── les circuit des voyages et tous  ── */
 .circuits-section{background:var(--white);}
 .circuits-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;}
 .circuit-card{border:1px solid var(--border);border-radius:var(--radius);padding:24px;display:flex;flex-direction:column;gap:12px;transition:box-shadow .2s,transform .2s;position:relative;overflow:hidden;}
@@ -167,7 +141,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);ove
 .btn-circuit{align-self:flex-start;padding:9px 20px;background:var(--green);color:white;border:none;border-radius:50px;font-size:13px;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;transition:background .2s;}
 .btn-circuit:hover{background:var(--green-light);}
 
-/* ── les saison  ── */
+/* ── saisons ── */
 .saisons-section{background:var(--bg);}
 .saisons-tabs{display:flex;gap:8px;margin-bottom:36px;}
 .saison-tab{padding:9px 20px;border-radius:50px;border:1.5px solid var(--border);background:var(--white);font-size:13px;font-weight:500;cursor:pointer;display:flex;align-items:center;gap:6px;transition:all .2s;font-family:'DM Sans',sans-serif;}
@@ -195,7 +169,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);ove
 .cta-form button{padding:13px 24px;background:var(--gold);color:var(--green-dark);border:none;border-radius:50px;font-family:'DM Sans',sans-serif;font-size:14px;font-weight:700;cursor:pointer;white-space:nowrap;transition:background .2s;}
 .cta-form button:hover{background:var(--gold-light);}
 
-/* ── FOOTER ── */
+/* ── footeur ── */
 footer{background:var(--green-dark);padding:60px 48px 30px;}
 .footer-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1.5fr 1fr 1fr 1.5fr;gap:48px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.1);}
 .footer-brand h3{font-family:'Playfair Display',serif;font-size:20px;color:white;margin-bottom:8px;}
@@ -213,7 +187,7 @@ footer{background:var(--green-dark);padding:60px 48px 30px;}
 .footer-bottom p{font-size:12px;color:rgba(255,255,255,.3);}
 .footer-logo-bg{font-family:'Playfair Display',serif;font-size:48px;font-weight:900;color:rgba(255,255,255,.06);letter-spacing:-2px;}
 
-/* ── RESPONSIVE ── */
+
 @media(max-width:900px){
   .hiw-steps,.resto-grid,.circuits-grid{grid-template-columns:1fr 1fr;}
   .saison-content.active{grid-template-columns:1fr;}
@@ -247,7 +221,7 @@ footer{background:var(--green-dark);padding:60px 48px 30px;}
     </ul>
     <div class="nav-right">
       <div class="lang-btn">🇫🇷 FR ▾</div>
-      <button class="btn-connexion" onclick="window.location.href='./connexion.html'">👤 Connexion</button>
+      <button class="btn-connexion" onclick="window.location.href='../html/connexion.html'">👤 Connexion</button>
     </div>
   </div>
 </nav>
@@ -299,7 +273,7 @@ footer{background:var(--green-dark);padding:60px 48px 30px;}
   </div>
 </section>
 
-<!-- RESTAURANTS -->
+<!-- le html des restau -->
 <section class="section resto-section">
   <div class="section-inner">
     <div style="text-align:center;margin-bottom:48px">
