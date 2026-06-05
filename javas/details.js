@@ -118,7 +118,7 @@ function loadDetail() {
   const data = LOGEMENTS_DATA.find(l => l.id === id);
 
   if (!data) {
-    root.innerHTML = `<div class="not-found"><h2>Logement introuvable</h2><p>Ce logement n'existe pas.</p><a href=" ../html/logements.html">← Retour aux logements</a></div>`;
+    root.innerHTML = `<div class="not-found"><h2>Logement introuvable</h2><p>Ce logement n'existe pas.</p><a href=" ./html/logements.html">← Retour aux logements</a></div>`;
     return;
   }
 
@@ -420,10 +420,10 @@ function showAuthModal() {
   const redirectEncoded = encodeURIComponent(currentUrl);
 
   document.getElementById('go-login').onclick = () => {
-    window.location.href = '../html/connexion.html?redirect=' + redirectEncoded;
+    window.location.href = './html/connexion.html?redirect=' + redirectEncoded;
   };
   document.getElementById('go-register').onclick = () => {
-    window.location.href = '../html/connexion.html?tab=register&redirect=' + redirectEncoded;
+    window.location.href = './html/connexion.html?tab=register&redirect=' + redirectEncoded;
   };
   document.getElementById('close-modal').onclick = () => modal.remove();
   modal.addEventListener('click', e => { if (e.target === modal) modal.remove(); });
