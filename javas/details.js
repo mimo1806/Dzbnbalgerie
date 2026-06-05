@@ -118,7 +118,7 @@ function loadDetail() {
   const data = LOGEMENTS_DATA.find(l => l.id === id);
 
   if (!data) {
-    root.innerHTML = `<div class="not-found"><h2>Logement introuvable</h2><p>Ce logement n'existe pas.</p><a href="logements.html">← Retour aux logements</a></div>`;
+    root.innerHTML = `<div class="not-found"><h2>Logement introuvable</h2><p>Ce logement n'existe pas.</p><a href="./logements.html">← Retour aux logements</a></div>`;
     return;
   }
 
